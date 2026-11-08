@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://maxmaxrouge-rgb.github.io/scan-to-bim-sample/sitemap.xml

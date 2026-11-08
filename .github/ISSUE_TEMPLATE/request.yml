@@ -1,0 +1,42 @@
+name: Request a quote
+description: Request a scoped scan-to-BIM quote.
+title: "Quote request: "
+body:
+  - type: markdown
+    attributes:
+      value: "Requests are public. Share project scope only. Do not include private scans or personal details. The sample makes no accuracy claim."
+  - type: textarea
+    id: project-type
+    attributes:
+      label: Project type
+      placeholder: "Example: office refurbishment"
+    validations:
+      required: true
+  - type: textarea
+    id: floor-area
+    attributes:
+      label: Floor area
+      placeholder: "Approximate area in m², or unknown"
+    validations:
+      required: true
+  - type: textarea
+    id: scan-format
+    attributes:
+      label: Scan format
+      placeholder: "Example: E57, LAS, LAZ, PLY, or unknown"
+    validations:
+      required: true
+  - type: textarea
+    id: required-outputs
+    attributes:
+      label: Required outputs
+      placeholder: "Example: IFC model, QA report, browser preview"
+    validations:
+      required: true
+  - type: textarea
+    id: deadline
+    attributes:
+      label: Deadline
+      placeholder: "Required date, or flexible"
+    validations:
+      required: true
